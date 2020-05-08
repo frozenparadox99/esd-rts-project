@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"binaryupcounter\startup_stm32f100xb.o"
+"binaryupcounter\main.o"
+"binaryupcounter\stm32f1xx_it.o"
+"binaryupcounter\stm32f1xx_hal_msp.o"
+"binaryupcounter\stm32f1xx_hal_gpio_ex.o"
+"binaryupcounter\stm32f1xx_hal_tim.o"
+"binaryupcounter\stm32f1xx_hal_tim_ex.o"
+"binaryupcounter\stm32f1xx_hal.o"
+"binaryupcounter\stm32f1xx_hal_rcc.o"
+"binaryupcounter\stm32f1xx_hal_rcc_ex.o"
+"binaryupcounter\stm32f1xx_hal_gpio.o"
+"binaryupcounter\stm32f1xx_hal_dma.o"
+"binaryupcounter\stm32f1xx_hal_cortex.o"
+"binaryupcounter\stm32f1xx_hal_pwr.o"
+"binaryupcounter\stm32f1xx_hal_flash.o"
+"binaryupcounter\stm32f1xx_hal_flash_ex.o"
+"binaryupcounter\stm32f1xx_hal_exti.o"
+"binaryupcounter\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "BinaryUpCounter\BinaryUpCounter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BinaryUpCounter.map" -o BinaryUpCounter\BinaryUpCounter.axf
