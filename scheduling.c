@@ -1,4 +1,4 @@
-define int time=0
+#define int time=0
 
 
 void delay(void){ //  second delay as per STM32 standards
